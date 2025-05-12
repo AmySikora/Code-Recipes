@@ -1,78 +1,26 @@
-<!-- Link your CSS file in <head> -->
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Code Recipes</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter&display=swap" rel="stylesheet">
+</head>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <h1 class="hero-title">🍳 Learn How to Cook Up Some Code!</h1>
-        <p class="hero-subtitle">HTML is your base ingredient, CSS adds the flavor, and JavaScript brings your dish to life.</p>
-        <div class="hero-buttons">
-          <a href="setup.html" class="btn btn-primary">Set Up Your Kitchen</a>
-          <a href="/recipes" class="btn btn-secondary">Start Cooking</a>
-        </div>
-      </section>      
-    
-    <!-- What Is Code Recipes -->
-<section class="intro-section">
-    <div class="intro-content">
-      <h2 class="intro-title">🥄 What is Code Recipes about?</h2>
-      <p class="intro-text">
-        Code Recipes is a fun way to learn how to build websites. Each recipe teaches you one part of a webpage, like how to create a button or style a card.
-        Once you’ve got the hang of the basics, you’ll start mixing and matching ingredients to “cook up” full web projects!
-      </p>
-      <p class="intro-note">✨ It’s like learning to code by following a recipe one tasty step at a time.</p>
-    </div>
-  </section>
+<body>
+  <nav class="main-nav">
+    <div class="nav-wrapper">
+      <a href="index.html" class="nav-logo">🍳 Code Recipes</a>
   
-    
-  <section class="featured-recipes">
-    <div class="recipes-wrapper">
-      <h2 class="recipes-title">🌟 Featured Recipes</h2>
-      <div class="recipe-grid">
-        <!-- Recipe Card 1 -->
-        <div class="recipe-card">
-          <h3 class="recipe-name">🍝 Spicy Button</h3>
-          <p class="recipe-desc">Create a button with bold colors and hover effects using HTML & CSS.</p>
-          <a href="/recipes/spicy-button" class="recipe-btn">Cook This</a>
-        </div>
-        <!-- Recipe Card 2 -->
-        <div class="recipe-card">
-          <h3 class="recipe-name">🍰 Sweet Card Layout</h3>
-          <p class="recipe-desc">Build a clean, responsive card using HTML, CSS, and a pinch of Flexbox.</p>
-          <a href="/recipes/card-layout" class="recipe-btn">Cook This</a>
-        </div>
-        <!-- Recipe Card 3 -->
-        <div class="recipe-card">
-          <h3 class="recipe-name">🎃 Sticky Nav Bar</h3>
-          <p class="recipe-desc">Make a fixed navigation bar with JavaScript and simple scroll behavior.</p>
-          <a href="/recipes/sticky-navbar" class="recipe-btn">Cook This</a>
-        </div>
-      </div>
-    </div>
-  </section>  
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        ☰
+      </button>
   
-  <section class="final-dishes-section">
-    <div class="final-dishes-content">
-      <h2 class="final-dishes-title">🍽️ Ready to Serve a Full Web Dish?</h2>
-      <p class="final-dishes-text">
-        Once you've cooked up a few recipes, it's time to plate a full project.
-        Try one of our combo dishes, like a spooky Halloween landing page or a colorful portfolio sampler!
-      </p>
-      <a href="/final-dishes" class="final-dishes-btn">Explore Final Dishes</a>
-    </div>
-  </section>
-  
-  <!-- Footer -->
-<footer class="site-footer">
-    <div class="footer-content">
-      <p>🧑‍🍳 Built with code, coffee, and curiosity by<a href="https://amysikora.github.io/portfolio-website" target="_blank">Amy Sikora</a></p>
-      <div class="footer-links">
-        <a href="https://github.com/amysikora" target="_blank">GitHub</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-      </div>
-    </div>
-  </footer>
-  
-
-  
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="setup.html">Set Up</a></li>
+        <li><a href="/recipes">Recipes</a></li>
+        <li><a href="/final-dishes">Final Dishes</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
