@@ -1,100 +1,230 @@
-/* General Layout */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #fffaf3;
-    color: #2c2c2c;
-    line-height: 1.6;
+    background-color: #FFF8F0;
+    color: #3E2F1C;
   }
   
   /* Hero Section */
   .hero-section {
-    background-color: #ffe8cc;
+    background: linear-gradient(135deg, #FFF3B0, #FFD93D);
     text-align: center;
     padding: 4rem 1.5rem;
   }
   
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
   .hero-title {
-    font-size: 2.5rem;
-    color: #b45309;
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 2.8rem;
+    color: #3E2F1C;
     margin-bottom: 1rem;
   }
   
   .hero-subtitle {
     font-size: 1.2rem;
-    color: #92400e;
+    color: #5A4B34;
     margin-bottom: 2rem;
   }
   
-  .hero-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  
   .hero-buttons a {
-    text-decoration: none;
+    min-width: 200px;
+    text-align: center;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    margin: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease;
   }
   
   .btn-primary {
-    background-color: #ea580c;
+    background-color: #FF6B6B;
     color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    border: none;
   }
   
   .btn-primary:hover {
-    background-color: #c2410c;
+    background-color: #e05353;
+    transform: scale(1.05);
   }
   
   .btn-secondary {
     background-color: white;
-    color: #b45309;
-    border: 2px solid #fcd34d;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+    color: #3E2F1C;
+    border: 2px solid #FF6B6B;
   }
   
   .btn-secondary:hover {
-    background-color: #fff3c4;
-  }
+    background-color: #ffe6e6;
+    transform: scale(1.05);
+  }  
   
   /* Intro Section */
-  .intro-section {
-    background-color: #fff9db;
-    padding: 3.5rem 1.5rem;
+.intro-section {
+    background-color: #FFF8F0;
+    padding: 4rem 1.5rem;
     text-align: center;
   }
   
   .intro-content {
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
   }
   
   .intro-title {
     font-size: 2rem;
-    color: #92400e;
+    color: #b45309;
     margin-bottom: 1rem;
+    font-family: 'Fredoka One', sans-serif;
   }
   
   .intro-text {
     font-size: 1.1rem;
+    color: #3E2F1C;
     margin-bottom: 1.5rem;
+    line-height: 1.6;
   }
   
   .intro-note {
-    color: #b45309;
     font-style: italic;
+    color: #ea580c;
+    font-size: 1rem;
+  }  
+
+  /* Featured Recipe Section */
+  .featured-recipes {
+    background-color: #fff4e6;
+    padding: 4rem 1.5rem;
+  }
+  
+  .recipes-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .recipes-title {
+    font-size: 2rem;
+    color: #b45309;
+    margin-bottom: 2rem;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .recipe-card {
+    background-color: #ffffff;
+    border: 2px solid #fcd34d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .recipe-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-name {
+    font-size: 1.3rem;
+    color: #ea580c;
+    margin-bottom: 0.5rem;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  
+  .recipe-desc {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #4b5563;
+  }
+  
+  .recipe-btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background-color: #ea580c;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .recipe-btn:hover {
+    background-color: #c2410c;
+  }  
+  
+  /* Final Dishes Teaser Section */
+  .final-dishes-section {
+    background-color: #fef3c7;
+    padding: 4rem 1.5rem;
+    text-align: center;
+  }
+  
+  .final-dishes-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .final-dishes-title {
+    font-size: 2rem;
+    color: #92400e;
+    margin-bottom: 1rem;
+    font-family: 'Fredoka One', sans-serif;
+  }
+  
+  .final-dishes-text {
+    font-size: 1.1rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+  }
+  
+  .final-dishes-btn {
+    background-color: #ea580c;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .final-dishes-btn:hover {
+    background-color: #c2410c;
+  }
+  
+  /* Footer */
+.site-footer {
+    background-color: #3E2F1C;
+    color: #FFF8F0;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    margin-bottom: 1rem;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .footer-content a {
+    color: #FFD93D;
+    text-decoration: none;
+    margin: 0 0.5rem;
+    font-weight: 500;
+  }
+  
+  .footer-content a:hover {
+    text-decoration: underline;
   }
   
