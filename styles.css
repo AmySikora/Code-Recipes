@@ -228,3 +228,74 @@ body {
     text-decoration: underline;
   }
   
+  /* Setup Kitchen Styles */
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFF8F0;
+    color: #3E2F1C;
+    padding: 2rem;
+  }
+  
+  h1 {
+    font-family: 'Fredoka One', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .intro {
+    max-width: 700px;
+    margin: 0 auto 2rem auto;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  
+  ol {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding-left: 1.2rem;
+  }
+  
+  ol li {
+    background-color: #fff;
+    border: 2px solid #FFD93D;
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  a {
+    color: #FF6B6B;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .next-step {
+    text-align: center;
+    font-size: 1.1rem;
+    margin-top: 2rem;
+  }
+  
+  .next-step a {
+    display: inline-block;
+    background-color: #FF6B6B;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  
+  .next-step a:hover {
+    background-color: #e05353;
+  }
+  
