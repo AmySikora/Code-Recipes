@@ -1,9 +1,24 @@
-body {
+/* ================================
+   Code Recipes Theme Colors 🍽️
+   ================================ */
+
+   :root {
+    --primary-bg: #f6d9c3;         /* soft peach */
+    --secondary-bg: #fff3e6;       /* light cream accent */
+    --accent-orange: #d35400;      /* spicy orange for headings */
+    --button-pink: #ff6b6b;
+    --button-peach: #ff956b;
+    --card-border: #ffdca3;
+    --text-dark: #3e2f1c;
+    --text-medium: #5c3d2e;
+  }
+  
+  body {
     margin: 0;
     padding: 0;
-    background-color: #FFF8F0;
     font-family: 'Inter', sans-serif;
-  }
+    background: linear-gradient(to bottom, var(--primary-bg), var(--secondary-bg));
+  }  
 
 /* === Navbar === */
 .main-nav {
@@ -88,340 +103,78 @@ body {
   }  
   
   /* Hero Section */
-  .hero-section {
-    background: linear-gradient(135deg, #FFF3B0, #FFD93D);
-    text-align: center;
-    padding: 4rem 1.5rem;
-  }
-  
-  .hero-title {
-    font-family: 'Fredoka One', sans-serif;
-    font-size: 2.8rem;
-    color: #3E2F1C;
-    margin-bottom: 1rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.2rem;
-    color: #5A4B34;
-    margin-bottom: 2rem;
-  }
-  
-  .hero-buttons a {
-    min-width: 200px;
-    text-align: center;
-    display: inline-block;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 0.75rem 1.5rem;
-    border-radius: 8px;
-    margin: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
-    transition: transform 0.2s ease;
-  }
-  
-  .btn-primary {
-    background-color: #FF6B6B;
-    color: white;
-    border: none;
-  }
-  
-  .btn-primary:hover {
-    background-color: #e05353;
-    transform: scale(1.05);
-  }
-  
-  .btn-secondary {
-    background-color: white;
-    color: #3E2F1C;
-    border: 2px solid #FF6B6B;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #ffe6e6;
-    transform: scale(1.05);
-  }  
-  
-  /* Intro Section */
+  /* Hero Section */
+.hero-section {
+  background: linear-gradient(to bottom, #fff3b0, #ffd93d);
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+.hero-title {
+  font-family: 'Fredoka One', sans-serif;
+  font-size: 2.8rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #5a4b34;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons a {
+  min-width: 200px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  margin: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--button-pink);
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #e05353;
+  transform: scale(1.05);
+}
+
+.btn-secondary {
+  background-color: white;
+  color: var(--text-dark);
+  border: 2px solid var(--button-pink);
+}
+
+.btn-secondary:hover {
+  background-color: #ffe6e6;
+  transform: scale(1.05);
+}
+
+/* Intro Section */
 .intro-section {
-    background-color: #FFF8F0;
-    padding: 4rem 1.5rem;
-    text-align: center;
-  }
-  
-  .intro-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .intro-title {
-    font-size: 2rem;
-    color: #b45309;
-    margin-bottom: 1rem;
-    font-family: 'Fredoka One', sans-serif;
-  }
-  
-  .intro-text {
-    font-size: 1.1rem;
-    color: #3E2F1C;
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-  }
-  
-  .intro-note {
-    font-style: italic;
-    color: #ea580c;
-    font-size: 1rem;
-  }  
+  background: rgba(255, 248, 240, 0.95);
+  padding: 4rem 1.5rem;
+  text-align: center;
+  border-top: 2px solid var(--card-border);
+  border-bottom: 2px solid var(--card-border);
+  backdrop-filter: blur(2px);
+}
 
-  /* Featured Recipe Section */
-  .featured-recipes {
-    background-color: #fff4e6;
-    padding: 4rem 1.5rem;
-  }
-  
-  .recipes-wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
-    text-align: center;
-  }
-  
-  .recipes-title {
-    font-size: 2rem;
-    color: #b45309;
-    margin-bottom: 2rem;
-    font-family: 'Fredoka One', sans-serif;
-  }
-  
-  .recipe-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 2rem;
-  }
-  
-  .recipe-card {
-    background-color: #ffffff;
-    border: 2px solid #fcd34d;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .recipe-card:hover {
-    transform: translateY(-6px) scale(1.02);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  
-  .recipe-name {
-    font-size: 1.3rem;
-    color: #ea580c;
-    margin-bottom: 0.5rem;
-    font-family: 'Fredoka One', sans-serif;
-  }
-  
-  .recipe-desc {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #4b5563;
-  }
-  
-  .recipe-btn {
-    display: inline-block;
-    padding: 0.6rem 1.2rem;
-    background-color: #ea580c;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-    font-weight: bold;
-    transition: background-color 0.3s;
-  }
-  
-  .recipe-btn:hover {
-    background-color: #c2410c;
-  }  
-  
-  /* Final Dishes Teaser Section */
-  .final-dishes-section {
-    background-color: #fef3c7;
-    padding: 4rem 1.5rem;
-    text-align: center;
-  }
-  
-  .final-dishes-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .final-dishes-title {
-    font-size: 2rem;
-    color: #92400e;
-    margin-bottom: 1rem;
-    font-family: 'Fredoka One', sans-serif;
-  }
-  
-  .final-dishes-text {
-    font-size: 1.1rem;
-    color: #4b5563;
-    margin-bottom: 2rem;
-  }
-  
-  .final-dishes-btn {
-    background-color: #ea580c;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    font-weight: bold;
-    text-decoration: none;
-    transition: background-color 0.3s;
-  }
-  
-  .final-dishes-btn:hover {
-    background-color: #c2410c;
-  }
-  
-  /* Footer */
-.site-footer {
-    background-color: #3E2F1C;
-    color: #FFF8F0;
-    padding: 2rem 1rem;
-    text-align: center;
-    font-size: 0.95rem;
-  }
-  
-  .footer-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .footer-content p {
-    margin-bottom: 1rem;
-    font-family: 'Inter', sans-serif;
-  }
-  
-  .footer-content a {
-    color: #FFD93D;
-    text-decoration: none;
-    margin: 0 0.5rem;
-    font-weight: 500;
-  }
-  
-  .footer-content a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Setup Kitchen Styles */
+.intro-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-  body {
-    font-family: 'Inter', sans-serif;
-    background-color: #FFF8F0;
-    color: #3E2F1C;
-    padding: 2rem;
-  }
-  
-  h1 {
-    font-family: 'Fredoka One', sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .intro {
-    max-width: 700px;
-    margin: 0 auto 2rem auto;
-    font-size: 1.1rem;
-    text-align: center;
-  }
-  
-  ol {
-    max-width: 700px;
-    margin: 2rem auto;
-    padding-left: 1.2rem;
-  }
-  
-  ol li {
-    background-color: #fff;
-    border: 2px solid #FFD93D;
-    border-radius: 10px;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-    font-size: 1rem;
-    line-height: 1.6;
-  }
-  
-  a {
-    color: #FF6B6B;
-    font-weight: 600;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  .next-step {
-    text-align: center;
-    font-size: 1.1rem;
-    margin-top: 2rem;
-  }
-  
-  .next-step a {
-    display: inline-block;
-    background-color: #FF6B6B;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: bold;
-    margin-top: 1rem;
-  }
-  
-  .next-step a:hover {
-    background-color: #e05353;
-  }
-  
-  /* === Treat Unlocked Banner === */
-.treat-banner {
-    background-color: #ffe6cc;
-    color: #5c3d2e;
-    padding: 1rem;
-    text-align: center;
-    font-size: 1rem;
-    font-weight: bold;
-    border-bottom: 3px solid #ffb347;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    animation: fadeInDrop 0.6s ease-out;
-  }
-  
-  .treat-banner a {
-    color: #d35400;
-    text-decoration: underline;
-    margin-left: 0.5rem;
-  }
-  
-  .treat-banner a:hover {
-    color: #a84300;
-  }
-  
-  .hidden {
-    display: none;
-  }
-  
-  /* Optional animation for fun */
-  @keyframes fadeInDrop {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+.intro-title {
+  font-size: 2rem;
+  color: #b45309;
+  margin-bottom: 1rem;
+  font-family: 'Fre
